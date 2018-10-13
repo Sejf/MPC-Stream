@@ -21,7 +21,9 @@ providers = [
     "(?:(?:.* |))((?:https?:\/\/)?(?:(?:(?:www\.)))?pornhub\.com\/view_video.php\?viewkey=[0-9]*)"]
 #(?:(?:.* |))
 lenregex = len(providers)
+# Where you MPC player is
 player = "C:\Program Files (x86)\K-Lite Codec Pack\MPC-HC64\mpc-hc64.exe"
+# Youtube-DL path
 youtubedl = "youtube-dl.exe"
 provider = None
 curclip = None
@@ -97,4 +99,5 @@ while True:
         if (bol == True):
             oldclip = newclip
             play(newclip, provider)
+    # How Many time (in seconds) between scans        
     time.sleep(1)
